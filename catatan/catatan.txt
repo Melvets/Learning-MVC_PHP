@@ -1,0 +1,34 @@
+PART 1 ========================================================================================
+MVC (Model View Controller)
+    1. Definisi
+        A. Pola arsitektur pada perancangan perangkat lunak berorientasi objek.
+        B. Tujuannya adalah untuk memisahkan antara tampilan, data, dan proses.
+        C. Controller adalah komponen utama yang mengendalikan Model dan View
+        D. Controller = proses
+           Model = Data
+           View = tampilan
+    2. Kenapa MVC
+        A. Baik untuk Organisasi dan Struktur Kode
+        B. Pemisahan logic dan tampilan
+        C. Perawatan Kode
+        D. Implementasi konsep OOP
+        E. Digunakan oleh banyak Web Application Framework
+    3. Framework MVC
+        PHP         = CodeIgniter, Laravel, Yii, dll
+        Java        = Spring MVC, JSF, Struts, dll
+        Python      = Django, CherryPy, dll
+        Ruby        = Ruby on Rails, Sinatra, dll
+        Javascript  = AngularJS, React, Backbone.js, dll
+    4. Fungsi
+        A. Controller
+            - Perantara antara model dan view
+            - Menangani pemrosesan pada aplikasi
+            - Menangani aksi dari user 
+        B. Model
+            - Representasi pengetahuan
+            - Mengelola data
+            - Logika bisnis
+        C. View
+            - Output, apa yang dilihat oleh user
+            - Representasi visual dari model
+            - Lapisan Presentasi
