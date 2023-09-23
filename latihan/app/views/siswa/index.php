@@ -20,9 +20,10 @@
 
             <ul class="list-group">
                 <?php foreach($data['siswa'] as $data) : ?>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <li class="list-group-item">
                         <?= $data['nama']; ?>
-                        <a class="badge bg-primary text-decoration-none" href="<?= BASEURL; ?>/siswa/detail/<?= $data['id']; ?>">Detail</a>
+                        <a class="badge bg-danger text-decoration-none float-end ms-1" href="<?= BASEURL; ?>/siswa/hapus/<?= $data['id']; ?>" onclick="return confirm('yakin?')" >Hapus</a>
+                        <a class="badge bg-primary text-decoration-none float-end ms-1" href="<?= BASEURL; ?>/siswa/detail/<?= $data['id']; ?>">Detail</a>
                     </li>
                 <?php endforeach; ?>    
             </ul>
