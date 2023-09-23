@@ -1,21 +1,36 @@
 <div class="container mt-3">
 
     <div class="row">
-
       <div class="col-lg-6">
         <?php Flasher::flash(); ?>
       </div>
+    </div>
 
+    <div class="row mb-3">
+      <div class="col-lg-6">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary tombolTambahData" data-bs-toggle="modal" data-bs-target="#formModal">
+        Tambah Data Siswa
+        </button>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-lg-6">
+        <form action="<?= BASEURL; ?>/siswa/cari" method="post">
+
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Cari siswa" name="keyword" id="keyword" aria-describedby="button-addon2" autocomplete="off">
+            <button class="btn btn-outline-primary" type="submit" id="tombolCari">Search</button>
+          </div>
+
+        </form>
+      </div>
     </div>
 
     <div class="row">
         <div class="col-lg-6">
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary mb-3 tombolTambahData" data-bs-toggle="modal" data-bs-target="#formModal">
-            Tambah Data Siswa
-            </button>
-            
             <h3>Daftar Siswa</h3>
 
             <ul class="list-group">
