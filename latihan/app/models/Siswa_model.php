@@ -23,4 +23,21 @@ class Siswa_model {
         $this->db->bind('id', $id);
         return $this->db->single();
     }
+
+    public function tambahDataSiswa($data)
+    {
+        $query = "INSERT INTO siswa VALUES 
+                    (NULL, :nama, :nis, :email, :jurusan)";
+
+        $this->db->query($query);
+        $this->db->bind('nama', $data['nama']);
+        $this->db->bind('nis', $data['nis']);
+        $this->db->bind('email', $data['email']);
+        $this->db->bind('jurusan', $data['jurusan']);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+        
+    }
 }
